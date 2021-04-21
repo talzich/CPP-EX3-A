@@ -90,16 +90,16 @@ NumberWithUnits NumberWithUnits::operator++(int dummy){
 // Friend Operators
 //-----------------------------
 
-NumberWithUnits operator*(double d, NumberWithUnits num){
+NumberWithUnits ariel::operator*(double d, NumberWithUnits num){
     return num;
 }
 
 //-----------------------------
 // I/O Operators
 //-----------------------------
-ostream& operator<<(ostream &out, NumberWithUnits num){
+ostream& ariel::operator<<(ostream &out, NumberWithUnits num){
     return out;
 }
-istream& operator>>(istream &in, NumberWithUnits num){
+istream& ariel::operator>>(istream &in, NumberWithUnits num){
     return in;
 }
