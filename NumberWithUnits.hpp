@@ -27,17 +27,17 @@ namespace ariel{
             NumberWithUnits operator+=(NumberWithUnits num);
 
             //-----------------------------
-            // Comparison Operators
+            // Friend Comparison Operators
             //-----------------------------
 
-            bool operator!=(NumberWithUnits num);
-            bool operator==(NumberWithUnits num);
+            friend bool operator!=(NumberWithUnits num1, NumberWithUnits num2);
+            friend bool operator==(NumberWithUnits num1, NumberWithUnits num2);
 
-            bool operator<=(NumberWithUnits num);
-            bool operator>=(NumberWithUnits num);
+            friend bool operator<=(NumberWithUnits num1, NumberWithUnits num2);
+            friend bool operator>=(NumberWithUnits num1, NumberWithUnits num2);
 
-            bool operator<(NumberWithUnits num);
-            bool operator>(NumberWithUnits num);
+            friend bool operator<(NumberWithUnits num1, NumberWithUnits num2);
+            friend bool operator>(NumberWithUnits num1, NumberWithUnits num2);
 
             //-----------------------------
             // Increment Decrement Operators

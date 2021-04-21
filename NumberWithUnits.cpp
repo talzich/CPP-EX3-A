@@ -47,24 +47,24 @@ NumberWithUnits NumberWithUnits::operator+=(NumberWithUnits num){
 // Comparison Operators
 //-----------------------------
 
-bool NumberWithUnits::operator!=(NumberWithUnits num){
+bool ariel::operator!=(NumberWithUnits num1, NumberWithUnits num2){
     return false;
 }
-bool NumberWithUnits::operator==(NumberWithUnits num){
-    return false;
-}
-
-bool NumberWithUnits::operator<=(NumberWithUnits num){
-    return false;
-}
-bool NumberWithUnits::operator>=(NumberWithUnits num){
+bool ariel::operator==(NumberWithUnits num1, NumberWithUnits num2){
     return false;
 }
 
-bool NumberWithUnits::operator<(NumberWithUnits num){
+bool ariel::operator<=(NumberWithUnits num1, NumberWithUnits num2){
     return false;
 }
-bool NumberWithUnits::operator>(NumberWithUnits num){
+bool ariel::operator>=(NumberWithUnits num1, NumberWithUnits num2){
+    return false;
+}
+
+bool ariel::operator<(NumberWithUnits num1, NumberWithUnits num2){
+    return false;
+}
+bool ariel::operator>(NumberWithUnits num1, NumberWithUnits num2){
     return false;
 }
 
