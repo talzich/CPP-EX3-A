@@ -6,8 +6,11 @@ namespace ariel{
 
     class NumberWithUnits{
 
+        double number;
+        std::string unit;
+
         public:
-            NumberWithUnits(int num, string unit);
+            NumberWithUnits(double num, std::string unit);
 
             static void read_units(std::ifstream &u_fle);
 
@@ -55,8 +58,8 @@ namespace ariel{
                 //-----------------------------
                 // I/O Operators
                 //-----------------------------
-            friend ostream& operator<<(ostream& out, NumberWithUnits num);
-            friend istream& operator>>(istream& out, NumberWithUnits num);
+            friend std::ostream& operator<<(std::ostream& out, NumberWithUnits num);
+            friend std::istream& operator>>(std::istream& in, NumberWithUnits num);
     };
 
 }
