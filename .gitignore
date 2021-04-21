@@ -35,3 +35,9 @@ solution*
 *.app
 demo
 test
+
+# macOS Hidden Files 
+.DS_Store
+
+# Visual Studio Files
+.vscode/
